@@ -21,4 +21,8 @@ if [ -d "/var/opt/sonar-scanner-5.0.1.3006-linux" ];then
 fi
 sudo mv sonar-scanner-5.0.1.3006-linux /var/opt
 
-sudo ln -s /var/opt/sonar-scanner-5.0.1.3006-linux/bin/sonar-scanner sonar-scanner 
+sudo ln -s /var/opt/sonar-scanner-5.0.1.3006-linux/bin/sonar-scanner /bin/sonar-scanner 
+
+sudo chmod +X /bin/sonar-scanner 
+
+
